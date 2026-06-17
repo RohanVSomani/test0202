@@ -1,13 +1,12 @@
 pipeline{
 agent any
 tools{
-maven 'Maven'
-jdk 'JDK'
+maven 'maven'
 }
 stages{
 	stage('Checkout'){
 		steps{
-			git branch:'main' url:'https://github.com/RohanVSomani/test0202.git'
+			git branch:'main', url:'https://github.com/RohanVSomani/test0202.git'
 		}
 	}
 	stage('Build'){
